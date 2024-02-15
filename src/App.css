@@ -1,0 +1,82 @@
+/* Calculator enhancement created with the help of AI and Stack Overflow */
+
+.App {
+  text-align: center;
+  font-family: 'Helvetica', sans-serif;
+  background-color: #686868;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 10px #1a1a1a;
+}
+
+.display {
+  margin: 20px auto;
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: right;
+  font-size: 2em;
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 75px);
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.keypad button {
+  padding: 10px;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ddd;
+  transition: background-color 0.2s;
+}
+
+.keypad button:hover {
+  background-color: #ccc;
+}
+
+.keypad :nth-child(-n+4) {
+  background-color: rgb(0, 47, 255);
+  color:white;
+  transition: background-color 0.2s;
+}
+
+.keypad :nth-child(-n+4):hover {
+  background-color: rgba(80, 104, 209, 0.58);
+}
+
+.keypad button[name='='] {
+  background-color: yellow;
+  border: 1px solid #ccc;
+  transition: background-color 0.2s;
+}
+
+.keypad button[name='=']:hover {
+  background-color: palegoldenrod;
+}
+
+.keypad button[name='C'] {
+  background-color: red;
+  color:white;
+  transition: background-color 0.2s;
+}
+
+.keypad button[name='C']:hover {
+  background-color: palevioletred;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: #ffffff;
+}
